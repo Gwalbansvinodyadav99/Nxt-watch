@@ -15,6 +15,7 @@ import {
   BottomCon,
   BottomDesc,
   IconImage,
+  NavText,
   BottomHeading,
 } from './styledComponents'
 
@@ -57,6 +58,7 @@ class NavigationBar extends Component {
                       size={30}
                       color={activeTab === 'Home' ? '#ff0b37' : '#909090'}
                     />
+                    <NavText color={color}>Home</NavText>
                   </NavListCon>
                 </NavLink>
                 <NavLink to="/trending">
@@ -69,6 +71,7 @@ class NavigationBar extends Component {
                       size={30}
                       color={activeTab === 'Trending' ? '#ff0b37' : '#909090'}
                     />
+                    <NavText color={color}>Trending</NavText>
                   </NavListCon>
                 </NavLink>
                 <NavLink to="/gaming">
@@ -81,6 +84,7 @@ class NavigationBar extends Component {
                       size={30}
                       color={activeTab === 'Gaming' ? '#ff0b37' : '#909090'}
                     />
+                    <NavText color={color}>Gaming</NavText>
                   </NavListCon>
                 </NavLink>
                 <NavLink to="/saved-videos">
@@ -93,6 +97,7 @@ class NavigationBar extends Component {
                       size={30}
                       color={activeTab === 'Saved' ? '#ff0b37' : '#909090'}
                     />
+                    <NavText color={color}>Saved videos</NavText>
                   </NavListCon>
                 </NavLink>
               </Container>

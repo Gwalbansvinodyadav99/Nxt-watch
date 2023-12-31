@@ -37,6 +37,7 @@ export const PlaySocialButtonsCon = styled.div`
 export const BtnCon = styled.div`
   display: flex;
   max-width: 120px;
+  align-items: center;
 `
 export const SocialButton = styled.button`
   width: 90px;
@@ -50,6 +51,7 @@ export const SocialButton = styled.button`
 export const ButtonText = styled.span`
   margin-left: 8px;
   color: #2563eb;
+  margin-bottom: 10px;
 `
 export const HrLine = styled.hr`
   width: 100%;

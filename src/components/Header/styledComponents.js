@@ -44,14 +44,14 @@ export const CustomProfileImage = styled.img`
 export const CustomLogOut = styled.button`
   width: 100px;
   height: 35px;
-  background-color:  ${props => props.bgColor};
+  background-color: ${props => props.bgColor};
   border: 2px solid #3b82f6;
-  color: ${props => props.color}
+  color: ${props => props.color};
   font-weight: 600;
   border-radius: 5px;
   align-self: center;
-  cursor:pointer;  
-  margin-left:25px;
+  cursor: pointer;
+  margin-left: 25px;
 `
 export const PopupLogoutCon = styled.div`
   display: flex;
@@ -94,10 +94,10 @@ export const ConfirmButton = styled.button`
   border-radius: 5px;
   border: none;
   font-family: 'Roboto';
-  font-weight : 600;
+  font-weight: 600;
   background-color: #3b82f6;
-  color: #ffffff
+  color: #ffffff;
   cursor: pointer;
-  margin-left:20px;
+  margin-left: 20px;
   outline: none;
 `

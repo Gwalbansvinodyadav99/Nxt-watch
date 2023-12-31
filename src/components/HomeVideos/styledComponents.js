@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const VideoCardList = styled.ul`
   flex-wrap: wrap;
-  max-width: 80%;
+  width: 100%;
   display: flex;
 `
 export const NoVideosView = styled.div`

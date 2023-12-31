@@ -13,7 +13,6 @@ import {
   TrendingVideosCon,
   TrendingCon,
   TrendingHeaderCon,
-  LogoCon,
   TrendingHeaderName,
 } from './styledComponents'
 
@@ -116,10 +115,8 @@ class Trending extends Component {
                 <Header />
                 <NavigationBar />
                 <TrendingCon bgColor={bgColor} data-testid="trending">
-                  <TrendingHeaderCon>
-                    <LogoCon bgColor={bgColor}>
-                      <HiFire size={30} color="#ff0000" />
-                    </LogoCon>
+                  <TrendingHeaderCon bgColor={bgColor}>
+                    <HiFire size={30} color="#ff0000" />
                     <TrendingHeaderName textColor={textColor}>
                       Trending
                     </TrendingHeaderName>

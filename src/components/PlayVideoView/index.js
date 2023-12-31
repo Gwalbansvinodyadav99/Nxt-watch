@@ -25,6 +25,14 @@ import {
 const PlayVideoView = props => {
   const {videoDetails, isLiked, isDisLiked, clickLiked, clickDisLiked} = props
 
+  const onClickLike = () => {
+    clickLiked()
+  }
+
+  const onClickDislike = () => {
+    clickDisLiked()
+  }
+
   return (
     <>
       <ThemeAndVideoContext.Consumer>
@@ -44,14 +52,6 @@ const PlayVideoView = props => {
 
           const onClickSave = () => {
             addVideo(videoDetails)
-          }
-
-          const onClickLike = () => {
-            clickLiked()
-          }
-
-          const onClickDislike = () => {
-            clickDisLiked()
           }
 
           return (

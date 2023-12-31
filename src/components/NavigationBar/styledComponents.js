@@ -13,7 +13,7 @@ export const NavigationBarCon = styled.div`
   height: 92%;
   position: fixed;
   top: 60px;
-  background-color : ${props => props.bgColor}
+  background-color: ${props => props.bgColor};
   min-height: 100vh;
 `
 export const Container = styled.ul`
@@ -39,15 +39,22 @@ export const BottomHeading = styled.h1`
   font-family: 'roboto';
   font-weight: 600;
   font-size: 22px;
+  color: ${props => props.color};
   padding-top: 10px;
 `
 export const BottomDesc = styled.p`
   font-family: 'roboto';
   font-weight: 600;
   font-size: 18px;
-  color : ${props => props.color}
+  color: ${props => props.color};
   padding-top: 10px;
-  max-width: 40%;
+  max-width: 100px;
+`
+export const NavText = styled.p`
+  font-family: 'roboto';
+  font-size: 18px;
+  color: ${props => props.color};
+  padding-left: 10px;
 `
 
 export const NavLink = styled(Link)`
@@ -57,6 +64,7 @@ export const BottomCon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 20px;
 `
 export const IconImage = styled.img`
   width: 50px;

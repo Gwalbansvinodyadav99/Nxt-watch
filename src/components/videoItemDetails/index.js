@@ -88,14 +88,14 @@ class VideoItemDetails extends Component {
 
   clickedLiked = () => {
     this.setState(prev => ({
-      isLiked: !prev.isClicked,
+      isLiked: !prev.isLiked,
       isDisLiked: false,
     }))
   }
 
   clickedDisLiked = () => {
     this.setState(prev => ({
-      isDisLiked: !prev.isClicked,
+      isDisLiked: !prev.isDisLiked,
       isLiked: false,
     }))
   }
