@@ -1,12 +1,12 @@
 import {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
-import './index.css'
 
 import {
   AppContainer,
   UserNameAndPasswordCon,
   CustomInput,
+  Logo,
   CustomCheckBox,
   CustomLabel,
   ShowPassword,
@@ -25,17 +25,13 @@ class LoginForm extends Component {
     errorMsg: '',
   }
 
-  onChangeUsername = event => {
+  onChangeHandler = event => {
     this.setState({[event.target.name]: event.target.value})
-  }
-
-  onChangePassword = event => {
-    this.setState({password: event.target.value})
   }
 
   onShowPassword = () => {
     this.setState(prevState => ({
-      showPassword: prevState.showPassword,
+      showPassword: !prevState.showPassword,
     }))
   }
 
@@ -77,7 +73,7 @@ class LoginForm extends Component {
         <CustomLabel htmlFor="username">USERNAME</CustomLabel>
         <CustomInput
           type="text"
-          onChange={this.onChangeUsername}
+          onChange={this.onChangeHandler}
           value={username}
           id="username"
           placeholder="Username"
@@ -92,10 +88,10 @@ class LoginForm extends Component {
     const inputType = showPassword ? 'text' : 'password'
     return (
       <>
-        <CustomLabel htmlFor="password">USERNAME</CustomLabel>
+        <CustomLabel htmlFor="password">PASSWORD</CustomLabel>
         <CustomInput
           type={inputType}
-          onChange={this.onChangePassword}
+          onChange={this.onChangeHandler}
           value={password}
           name="password"
           id="password"
@@ -123,9 +119,13 @@ class LoginForm extends Component {
       <>
         <AppContainer>
           <FormContainer onSubmit={this.onSubmitForm}>
-            <userNameAndPasswordCon>
+            <Logo
+              src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
+              alt="website logo"
+            />
+            <UserNameAndPasswordCon>
               {this.renderUsernameField()}
-            </userNameAndPasswordCon>
+            </UserNameAndPasswordCon>
             <UserNameAndPasswordCon>
               {this.renderPasswordField()}
             </UserNameAndPasswordCon>
